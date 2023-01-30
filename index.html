@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Addition</title>
+</head>
+<body>
+
+    <form name="myform">
+        <input type="text" name="firstnumber" ><br><br>
+         <input type="text" name="secondnumber" ><br><br>
+         <input type="button" value="Add" onclick="add()">
+         <input type="button"  value="Sub" onclick="subtract()">
+          <input type="button"  value="Mul" onclick="multiply()">
+           <input type="button"  value="Div" onclick="divide()"><br><br>
+           <input type="text" name="result">
+    </form>
+
+    <script>
+        function add(){
+            var n1 = parseInt(myform.firstnumber.value);
+            var n2 = parseInt(myform.secondnumber.value);
+            add = n1+n2;
+            myform.result.value=add;
+        }
+         function subtract(){
+            var n1 = parseInt(myform.firstnumber.value);
+            var n2 = parseInt(myform.secondnumber.value);
+            sub = n1-n2;
+            myform.result.value=sub;
+        }
+        
+        function multiply(){
+            var n1 = parseInt(myform.firstnumber.value);
+            var n2 = parseInt(myform.secondnumber.value);
+            mul = n1*n2;
+            myform.result.value=mul;
+        }
+        function divide(){
+            var n1 = parseInt(myform.firstnumber.value);
+            var n2 = parseInt(myform.secondnumber.value);
+            div = n1/n2;
+            myform.result.value=div;
+        }
+    </script>
+    
+</body>
+</html>
